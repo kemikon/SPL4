@@ -22,7 +22,7 @@ public class Game {
 	public static boolean spielfeldPruefen(int zeile, int spalte) {
 		if (minenfeld[zeile][spalte] == "[x]") {
 			spielfeld[zeile][spalte] = "<X>";
-			spielfeldAnzeigen();
+			spielfeldAnzeigen();		
 			System.out.println("Bummm\nDu hast leider die Mine erwischt...");
 			System.out.println("Game over!");
 			return true;
